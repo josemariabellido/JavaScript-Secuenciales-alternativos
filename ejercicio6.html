@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+        
+        var cadena=prompt("Escribe una cadena");
+
+        for (var cont=0;cont<cadena.length;cont++)
+        {
+            if (cadena[cont]=="A"||cadena[cont]=="B"||
+            cadena[cont]=="C"||cadena[cont]=="D"||
+            cadena[cont]=="E"||cadena[cont]=="F"||
+            cadena[cont]=="G"||cadena[cont]=="H"||
+            cadena[cont]=="I"||cadena[cont]=="J"||
+            cadena[cont]=="K"||cadena[cont]=="K"||
+            cadena[cont]=="M"||cadena[cont]=="N"||
+            cadena[cont]=="Ñ"||cadena[cont]=="O"||cadena[cont]=="P"||cadena[cont]=="Q"||
+            cadena[cont]=="R"||cadena[cont]=="S"||cadena[cont]=="T"||cadena[cont]=="U"||cadena[cont]=="V"||
+            cadena[cont]=="W"||cadena[cont]=="X"||cadena[cont]=="Y"||cadena[cont]=="Z")
+            {
+                $(".resultado").html("La cadena introducida tiene algún caracter en mayúscula");
+            }
+            else
+            {
+                $(".resultado").html("La cadena introducida no tiene ningún caracter en mayúscula");
+            }
+        }
+        
+        });
+</script>
+</head>
+<body>
+    <p class="resultado"></p>
+</body>
+</html>

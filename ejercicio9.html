@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+        
+        var num1=parseInt(prompt("Escriba un numero"));
+        var num2=parseInt(prompt("Escriba otro numero"));
+        var num3=parseInt(prompt("Escriba otro numero"));
+
+        if (num1>num2 && num1>num3)
+        {
+            if (num2>num3)
+            {
+                $("#resultado").html("Los numeros ordenados de mayor a menor es: "+num1+" > "+num2+ " > "+num3);
+            }
+            else
+            {
+                $("#resultado").html("Los numeros ordenados de mayor a menor es: "+num1+" > "+num3+ " > "+num2);
+            }
+        }
+        else if (num2>num1 && num2>num3)
+        {
+            if (num1>num3)
+            {
+                $("#resultado").html("Los numeros ordenados de mayor a menor es: "+num2+" > "+num1+ " > "+num3);
+            }
+            else
+            {
+                $("#resultado").html("Los numeros ordenados de mayor a menor es: "+num2+" > "+num3+ " > "+num1);
+            }
+        }
+        else if (num3>num1 && num3>num2)
+        {
+            if (num1>num2)
+            {
+                $("#resultado").html("Los numeros ordenados de mayor a menor es: "+num3+" > "+num1+ " > "+num2);
+            }
+            else
+            {
+                $("#resultado").html("Los numeros ordenados de mayor a menor es: "+num3+" > "+num2+ " > "+num1);
+            }
+        }
+        
+        
+        
+        });
+</script>
+</head>
+<body>
+    <p id="resultado"></p>
+</body>
+</html>
